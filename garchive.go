@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 )
 
-func ArchiverDir(input string, output string) {
+func ArchiveDir(input string, output string) {
 	file, err := os.Create(output)
 	if err != nil {
 		panic(err)
