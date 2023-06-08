@@ -35,9 +35,6 @@ func ArchiverDir(input string, output string) {
 		defer file.Close()
 
 		// Ensure that `path` is not absolute; it should not start with "/".
-		// This snippet happens to work because I don't use
-		// absolute paths, but ensure your real-world code
-		// transforms path into a zip-root relative path.
 		f, err := w.Create(path)
 		if err != nil {
 			return err
